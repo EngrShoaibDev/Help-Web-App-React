@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.loading-indicator:before {
+    content: '';
+    background: #00000080;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  .react-tel-input .form-control{
+    height: 3rem !important;
+    width: 100% !important;
+    border-radius: 16px !important;
+  }
+  .react-tel-input .selected-flag {
+    border-radius: 16px 0 0 16px !important;
+}
+.react-tel-input .flag-dropdown{
+  border-radius: 16px 0 0 16px !important;
+}
+  .loading-indicator:after {
+    content: ' ';
+    position: fixed;
+    top: 40%;
+    left: 45%;
+    z-index: 10010;
+    color:white;
+    text-align:center;
+    font-weight:bold;
+    font-size:1.2rem;        
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #0474bf; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+.react-tel-input .country-list {
+  text-align: left;
+}
+input[type='range'] {
+  background: linear-gradient(
+      to right,
+      #80cbc7 0%,
+      #80cbc7 calc((var(--value) - var(--min)) / (var(--max) - var(--min)) * 100%),
+      white calc((var(--value) - var(--min)) / (var(--max) - var(--min)) * 100%),
+      white 100%
+  );
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  height: 8px;
+  background: transparent;
+}
+
+input[type='range']::-moz-range-track {
+  height: 8px;
+  background: transparent;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  appearance: none;
+  height: 16px;
+  width: 16px;
+  background-color: #80cbc7;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -4px; /* Adjust based on the track height */
+}
+
+input[type='range']::-moz-range-thumb {
+  appearance: none;
+  height: 16px;
+  width: 16px;
+  background-color: #80cbc7;
+  border-radius: 50%;
+  cursor: pointer;
+}
