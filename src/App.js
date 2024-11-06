@@ -5,6 +5,7 @@ import { themeChange } from 'theme-change'
 import checkAuth from './app/auth';
 import initializeApp from './app/init';
 import Home from './pages/Home/Home';
+import Search from './pages/Search/Search';
 import Navbar from './pages/Navbar/Navbar';
 
 // Importing pages
@@ -47,6 +48,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/documentation" element={<Documentation />} />
           <Route path="/Home" element={<Home />} />
+          <Route path="/Search" element={<Search />} />
           
           {/* Place new routes over this */}
           <Route path="/app/*" element={<Layout />} />

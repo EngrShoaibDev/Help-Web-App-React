@@ -1,5 +1,5 @@
 import React from 'react';
-import ProfileCard from './Components/ProfileCard';
+import ProfileCard from '../../components/Cards/ProfileCard';
 import Navbar from '../Navbar/Navbar';
 
 
